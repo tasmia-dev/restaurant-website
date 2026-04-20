@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact & Reservations | The Golden Fork</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="contact.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-logo">
+      <img src="images/logo/logo.png" alt="The Golden Fork"/>
+      <span>The Golden Fork</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="nav-reserve">Reserve a Table</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero" style="background-image: url('images/background/agency-slider-04.jpg')">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="section-label" style="justify-content:center"><span>Get in Touch</span></div>
+      <h1>Contact Us</h1>
+      <p>Reserve a table, plan a private event, or simply say hello</p>
+    </div>
+  </div>
+
+  <!-- CONTACT LAYOUT -->
+  <section class="contact-section">
+    <div class="contact-grid">
+
+      <!-- RESERVATION FORM -->
+      <div class="form-side">
+        <div class="section-label"><span>Book a Table</span></div>
+        <h2>Make a Reservation</h2>
+        <p class="form-sub">Fill in the details below and we'll confirm your booking within 2 hours. For same-day reservations, please call us directly.</p>
+
+        <div class="reservation-form" id="reservationForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="Rahul" id="firstName"/>
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Sharma" id="lastName"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="rahul@example.com" id="email"/>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+91 98765 43210" id="phone"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Date</label>
+              <input type="date" id="date"/>
+            </div>
+            <div class="form-group">
+              <label>Time</label>
+              <select id="time">
+                <option value="">Select time</option>
+                <option>12:00 PM</option>
+                <option>12:30 PM</option>
+                <option>01:00 PM</option>
+                <option>01:30 PM</option>
+                <option>07:00 PM</option>
+                <option>07:30 PM</option>
+                <option>08:00 PM</option>
+                <option>08:30 PM</option>
+                <option>09:00 PM</option>
+                <option>09:30 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Number of Guests</label>
+              <select id="guests">
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5 Guests</option>
+                <option>6 Guests</option>
+                <option>7-10 Guests</option>
+                <option>10+ Guests (Private Event)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Occasion</label>
+              <select id="occasion">
+                <option>General Dining</option>
+                <option>Birthday</option>
+                <option>Anniversary</option>
+                <option>Business Dinner</option>
+                <option>Proposal</option>
+                <option>Private Event</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label>Special Requests</label>
+            <textarea placeholder="Dietary requirements, seating preferences, allergies, or any special arrangements..." id="message"></textarea>
+          </div>
+          <button class="btn-gold submit-btn" onclick="submitForm()">Confirm Reservation</button>
+        </div>
+
+        <!-- SUCCESS MESSAGE -->
+        <div class="success-msg" id="successMsg" style="display:none">
+          <div class="success-icon">✓</div>
+          <h3>Reservation Received!</h3>
+          <p>Thank you! We'll confirm your table within 2 hours via email or phone. We look forward to welcoming you to The Golden Fork.</p>
+          <a href="menu.html" class="btn-outline" style="margin-top:20px">Browse Our Menu</a>
+        </div>
+      </div>
+
+      <!-- INFO SIDE -->
+      <div class="info-side">
+        <div class="info-card">
+          <h3>📍 Find Us</h3>
+          <p>12, Church Street, MG Road<br/>Bengaluru, Karnataka 560001</p>
+          <a href="https://maps.google.com" target="_blank" class="info-link">Get Directions →</a>
+        </div>
+        <div class="info-card">
+          <h3>📞 Call Us</h3>
+          <p>For same-day reservations or any enquiries:</p>
+          <a href="tel:+918012345678" class="info-link big">+91 80 1234 5678</a>
+        </div>
+        <div class="info-card">
+          <h3>✉ Email Us</h3>
+          <p>Reservations & Private Events:</p>
+          <a href="mailto:reservations@goldenfork.in" class="info-link">reservations@goldenfork.in</a>
+          <p style="margin-top:8px">General Enquiries:</p>
+          <a href="mailto:info@goldenfork.in" class="info-link">info@goldenfork.in</a>
+        </div>
+        <div class="info-card">
+          <h3>🕐 Opening Hours</h3>
+          <div class="hours-list">
+            <div class="hour-row">
+              <span>Monday – Thursday</span>
+              <span>12pm – 11pm</span>
+            </div>
+            <div class="hour-row">
+              <span>Friday – Saturday</span>
+              <span>12pm – 12am</span>
+            </div>
+            <div class="hour-row">
+              <span>Sunday</span>
+              <span>1pm – 10pm</span>
+            </div>
+          </div>
+        </div>
+        <div class="info-image">
+          <img src="images/agency-content-img01.jpg" alt="Restaurant ambiance"/>
+          <div class="info-image-overlay">
+            <p>"A perfect space for any occasion"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVATE EVENTS SECTION -->
+  <section class="events-section">
+    <div class="events-img">
+      <img src="images/agency-work-14.jpg" alt="Private events"/>
+    </div>
+    <div class="events-content">
+      <div class="section-label"><span>Private Dining</span></div>
+      <h2>Host Your Event With Us</h2>
+      <p>From intimate birthday dinners to grand corporate gatherings, The Golden Fork offers exclusive private dining spaces for groups of 10 to 120 guests.</p>
+      <ul class="events-features">
+        <li>✓ Dedicated event coordinator</li>
+        <li>✓ Custom set menus & beverage packages</li>
+        <li>✓ AV equipment & décor arrangements</li>
+        <li>✓ Private entrance & butler service</li>
+        <li>✓ Floral & event styling on request</li>
+      </ul>
+      <a href="mailto:events@goldenfork.in" class="btn-gold">Enquire About Events</a>
+    </div>
+  </section>
+
+  <!-- MAP PLACEHOLDER -->
+  <div class="map-section">
+    <div class="map-placeholder">
+      <div class="map-inner" style="background-image: url('images/background/restaurant-about-bg.jpg')">
+        <div class="map-overlay"></div>
+        <div class="map-pin">
+          <div class="pin-dot"></div>
+          <div class="pin-label">
+            <strong>The Golden Fork</strong>
+            <span>12, Church Street, MG Road, Bengaluru</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo/logo-white.png" alt="The Golden Fork"/>
+        <p>A Bengaluru institution of fine dining since 2008. We believe every table holds the potential for something magical.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">12, Church Street, MG Road</a></li>
+          <li><a href="#">Bengaluru, Karnataka 560001</a></li>
+          <li><a href="tel:+918012345678">+91 80 1234 5678</a></li>
+          <li><a href="mailto:info@goldenfork.in">info@goldenfork.in</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-hours">
+        <h4>Hours</h4>
+        <p>Mon – Thu: 12pm – 11pm</p>
+        <p>Fri – Sat: 12pm – 12am</p>
+        <p>Sunday: 1pm – 10pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Golden Fork. All rights reserved.</span>
+      <span>Designed with ♥ in Bengaluru</span>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+    });
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+    function submitForm() {
+      const name = document.getElementById('firstName').value;
+      const email = document.getElementById('email').value;
+      const date = document.getElementById('date').value;
+      if (!name || !email || !date) {
+        alert('Please fill in your name, email and date to continue.');
+        return;
+      }
+      document.getElementById('reservationForm').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    }
+    // Set min date to today
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('date').setAttribute('min', today);
+  </script>
+</body>
+</html>

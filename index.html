@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Golden Fork | Fine Dining Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <img src="images/logo/logo.png" alt="The Golden Fork" />
+      <span>The Golden Fork</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-reserve">Reserve a Table</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image: url('images/background/hero-bg3.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">EST. 2008 · BENGALURU</div>
+      <h1>Where Every Meal<br/><em>Becomes a Memory</em></h1>
+      <p>Exquisite flavours crafted with passion, served in an atmosphere of timeless elegance. Experience dining that transcends the ordinary.</p>
+      <div class="hero-btns">
+        <a href="menu.html" class="btn-gold">Explore Menu</a>
+        <a href="contact.html" class="btn-outline">Reserve a Table</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>SCROLL DOWN</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- INTRO STRIP -->
+  <div class="intro-strip">
+    <div class="strip-item">
+      <img src="images/icons/restaurant-service-icon01.png" alt="fine dining" />
+      <span>Fine Dining</span>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <img src="images/icons/restaurant-service-icon02.png" alt="bar" />
+      <span>Craft Cocktails</span>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <img src="images/icons/restaurant-service-icon03.png" alt="delivery" />
+      <span>Private Events</span>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <img src="images/icons/restaurant-service-icon04.png" alt="catering" />
+      <span>Catering Service</span>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="home-about">
+    <div class="about-img-stack">
+      <img class="about-img-main" src="images/agency-content-img01.jpg" alt="Restaurant interior" />
+      <img class="about-img-accent" src="images/agency-content-img02.jpg" alt="Chef at work" />
+      <div class="about-years">
+        <span class="years-num">15+</span>
+        <span class="years-text">Years of Excellence</span>
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="section-label"><span>Our Story</span></div>
+      <h2>A Passion for Food,<br/>A Love for Hospitality</h2>
+      <p class="lead">Born in the heart of Bengaluru, The Golden Fork has been a destination for those who seek more than just a meal — they seek an experience.</p>
+      <p>Our culinary philosophy is rooted in celebrating the finest local ingredients, paired with global techniques and a deep respect for traditional recipes. Every dish is a conversation between the past and the present.</p>
+      <div class="about-highlights">
+        <div class="highlight">
+          <strong>200+</strong>
+          <span>Dishes on our menu</span>
+        </div>
+        <div class="highlight">
+          <strong>30+</strong>
+          <span>Expert chefs & staff</span>
+        </div>
+        <div class="highlight">
+          <strong>10K+</strong>
+          <span>Happy guests yearly</span>
+        </div>
+      </div>
+      <a href="about.html" class="btn-outline">Our Full Story</a>
+    </div>
+  </section>
+
+  <!-- FEATURED DISHES -->
+  <section class="featured-dishes">
+    <div class="dishes-header">
+      <div class="section-label"><span>Chef's Picks</span></div>
+      <h2>Signature Dishes</h2>
+      <p>A curated selection of our most celebrated creations</p>
+    </div>
+    <div class="dishes-grid">
+      <div class="dish-card large">
+        <img src="images/agency-work-02.jpg" alt="Signature Dish" />
+        <div class="dish-info">
+          <span class="dish-cat">Mains</span>
+          <h3>Herb-Crusted Lamb Rack</h3>
+          <p>Slow-roasted lamb with rosemary jus, truffle mash & seasonal greens</p>
+          <span class="dish-price">₹2,200</span>
+        </div>
+      </div>
+      <div class="dish-card">
+        <img src="images/agency-work-06.jpg" alt="Dish 2" />
+        <div class="dish-info">
+          <span class="dish-cat">Starters</span>
+          <h3>Seared Scallops</h3>
+          <p>Pan-seared scallops with pea purée & crispy pancetta</p>
+          <span class="dish-price">₹1,400</span>
+        </div>
+      </div>
+      <div class="dish-card">
+        <img src="images/agency-work-08.jpg" alt="Dish 3" />
+        <div class="dish-info">
+          <span class="dish-cat">Desserts</span>
+          <h3>Dark Chocolate Fondant</h3>
+          <p>Warm Belgian chocolate with vanilla bean ice cream</p>
+          <span class="dish-price">₹800</span>
+        </div>
+      </div>
+      <div class="dish-card">
+        <img src="images/agency-work-13.jpg" alt="Dish 4" />
+        <div class="dish-info">
+          <span class="dish-cat">Mains</span>
+          <h3>Butter Poached Lobster</h3>
+          <p>Fresh lobster tail with saffron bisque and micro herbs</p>
+          <span class="dish-price">₹3,500</span>
+        </div>
+      </div>
+    </div>
+    <div class="dishes-cta">
+      <a href="menu.html" class="btn-gold">View Full Menu</a>
+    </div>
+  </section>
+
+  <!-- PARALLAX QUOTE -->
+  <section class="quote-section" style="background-image: url('images/background/hero-bg9.jpg')">
+    <div class="quote-overlay"></div>
+    <blockquote>
+      <span class="quote-mark">"</span>
+      <p>Food is not just eating energy. It's an experience. It's culture, it's identity — it's everything.</p>
+      <cite>— Chef Arjun Mehra, Executive Chef</cite>
+    </blockquote>
+  </section>
+
+  <!-- GALLERY STRIP -->
+  <section class="gallery-strip">
+    <div class="gallery-header">
+      <div class="section-label"><span>Gallery</span></div>
+      <h2>Moments at The Golden Fork</h2>
+    </div>
+    <div class="gallery-row">
+      <div class="gallery-item tall"><img src="images/agency-work-14.jpg" alt="gallery 1" /></div>
+      <div class="gallery-item"><img src="images/content-50.jpg" alt="gallery 2" /></div>
+      <div class="gallery-item"><img src="images/agency-content-img03.jpg" alt="gallery 3" /></div>
+      <div class="gallery-item tall"><img src="images/agency-content-img01.jpg" alt="gallery 4" /></div>
+    </div>
+  </section>
+
+  <!-- RESERVATION CTA -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <div class="section-label"><span>Book Now</span></div>
+      <h2>Reserve Your Table Today</h2>
+      <p>Join us for an unforgettable culinary journey. Tables fill fast — secure yours now.</p>
+      <a href="contact.html" class="btn-gold">Make a Reservation</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo/logo-white.png" alt="The Golden Fork" />
+        <p>A Bengaluru institution of fine dining since 2008. We believe every table holds the potential for something magical.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">12, Church Street, MG Road</a></li>
+          <li><a href="#">Bengaluru, Karnataka 560001</a></li>
+          <li><a href="tel:+918012345678">+91 80 1234 5678</a></li>
+          <li><a href="mailto:info@goldenfork.in">info@goldenfork.in</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-hours">
+        <h4>Hours</h4>
+        <p>Mon – Thu: 12pm – 11pm</p>
+        <p>Fri – Sat: 12pm – 12am</p>
+        <p>Sunday: 1pm – 10pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Golden Fork. All rights reserved.</span>
+      <span>Designed with ♥ in Bengaluru</span>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Hamburger menu
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

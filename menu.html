@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Menu | The Golden Fork</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-logo">
+      <img src="images/logo/logo.png" alt="The Golden Fork" />
+      <span>The Golden Fork</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-reserve">Reserve a Table</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero" style="background-image: url('images/background/restaurant-menu-bg.jpg')">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="section-label" style="justify-content:center"><span>Discover</span></div>
+      <h1>Our Menu</h1>
+      <p>Handcrafted flavours inspired by tradition, elevated by innovation</p>
+    </div>
+  </div>
+
+  <!-- MENU TABS -->
+  <section class="menu-section">
+    <div class="menu-tabs">
+      <button class="tab active" onclick="showTab('starters')">Starters</button>
+      <button class="tab" onclick="showTab('mains')">Mains</button>
+      <button class="tab" onclick="showTab('seafood')">Seafood</button>
+      <button class="tab" onclick="showTab('desserts')">Desserts</button>
+      <button class="tab" onclick="showTab('drinks')">Drinks</button>
+    </div>
+
+    <!-- STARTERS -->
+    <div class="menu-tab-content active" id="starters">
+      <div class="menu-category-header">
+        <img src="images/icons/restaurant-menu-iteam02.png" alt="Starters" />
+        <h2>Starters & Appetisers</h2>
+        <p>Begin your journey with these carefully crafted small plates</p>
+      </div>
+      <div class="menu-items-grid">
+        <div class="menu-item">
+          <img src="images/agency-work-06.jpg" alt="Seared Scallops" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Seared Scallops</h3>
+              <span class="price">₹1,400</span>
+            </div>
+            <p>Pan-seared diver scallops on a bed of pea purée, crispy pancetta, and lemon beurre blanc.</p>
+            <span class="tag">Chef's Choice</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/agency-content-img02.jpg" alt="Truffle Arancini" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Truffle Arancini</h3>
+              <span class="price">₹950</span>
+            </div>
+            <p>Crispy risotto balls filled with black truffle and mozzarella, served with roasted tomato sauce.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/content-50.jpg" alt="Burrata Caprese" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Burrata Caprese</h3>
+              <span class="price">₹1,100</span>
+            </div>
+            <p>Fresh burrata with heirloom tomatoes, basil oil, aged balsamic, and sea salt flakes.</p>
+            <span class="tag">Vegetarian</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/agency-work-13.jpg" alt="Foie Gras Terrine" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Foie Gras Terrine</h3>
+              <span class="price">₹2,200</span>
+            </div>
+            <p>Silky duck foie gras terrine served with toasted brioche, fig compote and microgreens.</p>
+            <span class="tag">Signature</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/agency-work-08.jpg" alt="Soup of the Day" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Soup du Jour</h3>
+              <span class="price">₹650</span>
+            </div>
+            <p>Ask your server about today's freshly prepared seasonal soup served with artisan bread.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/agency-work-02.jpg" alt="Beef Tartare" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Classic Beef Tartare</h3>
+              <span class="price">₹1,600</span>
+            </div>
+            <p>Hand-cut tenderloin, capers, shallots, Dijon mustard, quail egg yolk and toast points.</p>
+            <span class="tag">New</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAINS -->
+    <div class="menu-tab-content" id="mains">
+      <div class="menu-category-header">
+        <img src="images/icons/restaurant-menu-iteam03.png" alt="Mains" />
+        <h2>Main Courses</h2>
+        <p>The heart of our menu — bold, satisfying, memorable</p>
+      </div>
+      <div class="menu-items-grid">
+        <div class="menu-item">
+          <img src="images/agency-work-02.jpg" alt="Lamb Rack" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Herb-Crusted Lamb Rack</h3>
+              <span class="price">₹2,200</span>
+            </div>
+            <p>Slow-roasted rack of lamb with rosemary jus, truffle mashed potato and seasonal greens.</p>
+            <span class="tag">Signature</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/agency-content-img01.jpg" alt="Duck Confit" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Duck Confit</h3>
+              <span class="price">₹1,950</span>
+            </div>
+            <p>Slow-cooked duck leg with cherry reduction, lentils du Puy and wilted spinach.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/agency-work-14.jpg" alt="Wagyu Beef" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Wagyu Beef Tenderloin</h3>
+              <span class="price">₹4,800</span>
+            </div>
+            <p>Grade A5 Wagyu beef with béarnaise sauce, pommes dauphine and truffle butter.</p>
+            <span class="tag">Premium</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/agency-content-img03.jpg" alt="Mushroom Wellington" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Wild Mushroom Wellington</h3>
+              <span class="price">₹1,750</span>
+            </div>
+            <p>Forest mushroom duxelles wrapped in golden puff pastry with red wine jus.</p>
+            <span class="tag">Vegetarian</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEAFOOD -->
+    <div class="menu-tab-content" id="seafood">
+      <div class="menu-category-header">
+        <img src="images/icons/restaurant-menu-iteam04.png" alt="Seafood" />
+        <h2>Seafood Specialities</h2>
+        <p>The freshest catch, prepared with coastal inspiration</p>
+      </div>
+      <div class="menu-items-grid">
+        <div class="menu-item">
+          <img src="images/agency-work-13.jpg" alt="Butter Lobster" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Butter Poached Lobster</h3>
+              <span class="price">₹3,500</span>
+            </div>
+            <p>Fresh lobster tail in saffron beurre blanc, micro herbs and saffron-scented risotto.</p>
+            <span class="tag">Chef's Choice</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/agency-work-06.jpg" alt="Sea Bass" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Pan-Seared Sea Bass</h3>
+              <span class="price">₹2,100</span>
+            </div>
+            <p>Crispy-skin sea bass fillet with clam chowder, samphire and fennel cream.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/content-50.jpg" alt="King Prawns" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Tiger Prawn Bisque</h3>
+              <span class="price">₹1,800</span>
+            </div>
+            <p>Grilled tiger prawns in rich shellfish bisque with cognac cream and sourdough croutons.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/agency-work-08.jpg" alt="Salmon" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Atlantic Salmon Fillet</h3>
+              <span class="price">₹1,600</span>
+            </div>
+            <p>Citrus-glazed salmon on quinoa tabbouleh with cucumber raita and dill oil.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="menu-tab-content" id="desserts">
+      <div class="menu-category-header">
+        <img src="images/icons/restaurant-menu-iteam05.png" alt="Desserts" />
+        <h2>Desserts</h2>
+        <p>Sweet endings that linger long after the last bite</p>
+      </div>
+      <div class="menu-items-grid">
+        <div class="menu-item">
+          <img src="images/agency-work-08.jpg" alt="Chocolate Fondant" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Dark Chocolate Fondant</h3>
+              <span class="price">₹800</span>
+            </div>
+            <p>Warm Belgian chocolate lava cake with vanilla bean ice cream and gold leaf dusting.</p>
+            <span class="tag">Signature</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/agency-content-img03.jpg" alt="Crème Brûlée" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Classic Crème Brûlée</h3>
+              <span class="price">₹650</span>
+            </div>
+            <p>Vanilla-infused custard with a perfectly caramelised sugar crust and fresh berries.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/agency-work-14.jpg" alt="Mango Panna Cotta" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Mango Panna Cotta</h3>
+              <span class="price">₹700</span>
+            </div>
+            <p>Silky coconut panna cotta with Alphonso mango coulis and toasted coconut flakes.</p>
+            <span class="tag">Seasonal</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/content-50.jpg" alt="Cheese Board" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Artisan Cheese Board</h3>
+              <span class="price">₹1,200</span>
+            </div>
+            <p>Selection of aged cheeses with honey, quince paste, walnuts and artisan crackers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DRINKS -->
+    <div class="menu-tab-content" id="drinks">
+      <div class="menu-category-header">
+        <img src="images/icons/restaurant-menu-iteam06.png" alt="Drinks" />
+        <h2>Drinks & Cocktails</h2>
+        <p>Curated beverages to complement every course</p>
+      </div>
+      <div class="menu-items-grid">
+        <div class="menu-item">
+          <img src="images/agency-work-02.jpg" alt="Signature Cocktail" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Golden Fork Signature</h3>
+              <span class="price">₹850</span>
+            </div>
+            <p>Aged rum, saffron-infused honey, fresh citrus and smoked rosemary sprig. Our house special.</p>
+            <span class="tag">Signature</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/agency-work-06.jpg" alt="Wine" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Wine by the Glass</h3>
+              <span class="price">from ₹600</span>
+            </div>
+            <p>Carefully curated selection of Old and New World wines, paired by our sommelier.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/content-50.jpg" alt="Mocktails" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Artisan Mocktails</h3>
+              <span class="price">from ₹450</span>
+            </div>
+            <p>Freshly made mocktails using house-infused syrups, fresh fruits and botanical garnishes.</p>
+            <span class="tag">Non-Alcoholic</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/agency-work-08.jpg" alt="Coffee" />
+          <div class="mi-details">
+            <div class="mi-top">
+              <h3>Specialty Coffee</h3>
+              <span class="price">from ₹280</span>
+            </div>
+            <p>Single-origin Coorg and Chikmagalur beans roasted in-house, prepared to perfection.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALLERGENS NOTE -->
+  <div class="allergen-note">
+    <p>⚠ Please inform your server of any allergies or dietary requirements. Our kitchen handles nuts, gluten, dairy, and seafood. Prices are inclusive of GST.</p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo/logo-white.png" alt="The Golden Fork" />
+        <p>A Bengaluru institution of fine dining since 2008. We believe every table holds the potential for something magical.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">12, Church Street, MG Road</a></li>
+          <li><a href="#">Bengaluru, Karnataka 560001</a></li>
+          <li><a href="tel:+918012345678">+91 80 1234 5678</a></li>
+          <li><a href="mailto:info@goldenfork.in">info@goldenfork.in</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-hours">
+        <h4>Hours</h4>
+        <p>Mon – Thu: 12pm – 11pm</p>
+        <p>Fri – Sat: 12pm – 12am</p>
+        <p>Sunday: 1pm – 10pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Golden Fork. All rights reserved.</span>
+      <span>Designed with ♥ in Bengaluru</span>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+    });
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+    function showTab(tab) {
+      document.querySelectorAll('.menu-tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+      document.getElementById(tab).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>

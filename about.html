@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | The Golden Fork</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="about.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-logo">
+      <img src="images/logo/logo.png" alt="The Golden Fork"/>
+      <span>The Golden Fork</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-reserve">Reserve a Table</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero" style="background-image: url('images/background/restaurant-about-bg.jpg')">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="section-label" style="justify-content:center"><span>Our Story</span></div>
+      <h1>About Us</h1>
+      <p>Where every plate tells a story of passion, craft, and love</p>
+    </div>
+  </div>
+
+  <!-- STORY SECTION -->
+  <section class="story-section">
+    <div class="story-grid">
+      <div class="story-text">
+        <div class="section-label"><span>The Beginning</span></div>
+        <h2>A Dream Born Over a Family Dinner</h2>
+        <p>The Golden Fork was founded in 2008 by Chef Arjun Mehra and his wife Priya, inspired by a simple dream — to create a space where food could bring people together, create memories, and celebrate the extraordinary flavours of India and the world.</p>
+        <p>What started as a 30-seat bistro on Church Street has grown into one of Bengaluru's most celebrated dining destinations, while never losing the warmth and intimacy of that first table.</p>
+        <p>Today, we serve over 300 guests nightly, but every plate is still crafted with the same attention and care as that very first dinner service.</p>
+      </div>
+      <div class="story-image">
+        <img src="images/agency-content-img01.jpg" alt="Restaurant interior"/>
+        <div class="story-badge">
+          <span class="big">2008</span>
+          <span class="small">Founded in Bengaluru</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY SECTION -->
+  <section class="philosophy-section" style="background-image: url('images/background/fitness-about-bg.jpg')">
+    <div class="phil-overlay"></div>
+    <div class="phil-content">
+      <div class="section-label" style="justify-content:center"><span>Our Philosophy</span></div>
+      <h2>Food as an Art Form</h2>
+      <p>We believe that a great meal is a conversation — between land and sea, between tradition and innovation, between the chef and the guest. Every dish we create is a reflection of our respect for ingredients, our love for technique, and our commitment to giving you an experience that lasts long after the last bite.</p>
+      <div class="phil-pillars">
+        <div class="pillar">
+          <img src="images/icons/restaurant-about-icon.png" alt="Locally sourced"/>
+          <h3>Locally Sourced</h3>
+          <p>We partner directly with farms across Karnataka and the Western Ghats for the freshest produce available.</p>
+        </div>
+        <div class="pillar">
+          <img src="images/icons/restaurant-service-icon01.png" alt="Artisan Craft"/>
+          <h3>Artisan Craft</h3>
+          <p>From house-cured meats to hand-rolled pasta, we do things the slow, careful, traditional way.</p>
+        </div>
+        <div class="pillar">
+          <img src="images/icons/restaurant-service-icon02.png" alt="Seasonal Menus"/>
+          <h3>Seasonal Menus</h3>
+          <p>Our menu changes with the seasons — celebrating what nature provides at its very best each month.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHEF SECTION -->
+  <section class="chef-section">
+    <div class="chef-grid">
+      <div class="chef-image">
+        <img src="images/restaurant-chef-01.jpg" alt="Chef Arjun Mehra"/>
+        <div class="chef-awards">
+          <div class="award">🏆 Best Fine Dining 2022</div>
+          <div class="award">⭐ Times Food Award 2023</div>
+          <div class="award">🌟 Michelin Recommended</div>
+        </div>
+      </div>
+      <div class="chef-bio">
+        <div class="section-label"><span>The Chef</span></div>
+        <h2>Chef Arjun Mehra</h2>
+        <h3 class="chef-title">Executive Chef & Co-Founder</h3>
+        <p>Arjun trained at the Culinary Institute of America before spending a decade in Paris under the legendary Chef Pierre Dupont. His return to India in 2008 brought with him a unique fusion of classical French technique with a deep love for Indian flavours and ingredients.</p>
+        <p>Under his leadership, The Golden Fork has received numerous accolades and has been consistently ranked among South India's top 10 restaurants. But for Chef Arjun, the greatest reward remains the smiles of guests at his tables.</p>
+        <div class="chef-quote">
+          <em>"I don't cook to impress. I cook to connect. Every plate is a handshake between me and the person sitting at that table."</em>
+        </div>
+        <a href="menu.html" class="btn-gold">Explore His Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section class="team-section">
+    <div class="section-label" style="justify-content:center"><span>The Team</span></div>
+    <h2>The People Behind Every Plate</h2>
+    <p>A restaurant is only as good as the people who run it. Meet some of our dedicated team.</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="images/agency-content-img02.jpg" alt="Sous Chef"/>
+        <div class="tc-info">
+          <h3>Chef Kavya Reddy</h3>
+          <span>Sous Chef</span>
+          <p>Specialises in seafood and desserts. Trained at Le Cordon Bleu, London.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="images/agency-content-img03.jpg" alt="Pastry Chef"/>
+        <div class="tc-info">
+          <h3>Chef Rohan Das</h3>
+          <span>Pastry Chef</span>
+          <p>Creates our legendary dessert selection using French patisserie techniques.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="images/agency-work-06.jpg" alt="Sommelier"/>
+        <div class="tc-info">
+          <h3>Nisha Sharma</h3>
+          <span>Head Sommelier</span>
+          <p>Certified WSET Level 4 sommelier with a passion for Indian and European wines.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="images/content-50.jpg" alt="Manager"/>
+        <div class="tc-info">
+          <h3>Vikram Nair</h3>
+          <span>Restaurant Manager</span>
+          <p>15 years in hospitality, ensuring every guest has an unforgettable experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section class="awards-section">
+    <div class="section-label" style="justify-content:center"><span>Recognition</span></div>
+    <h2>Awards & Accolades</h2>
+    <div class="awards-grid">
+      <div class="award-box">
+        <span class="award-icon">🏆</span>
+        <h3>Best Fine Dining Restaurant</h3>
+        <p>Times Food & Nightlife Awards, 2022, 2023</p>
+      </div>
+      <div class="award-box">
+        <span class="award-icon">⭐</span>
+        <h3>Top 10 Restaurants in South India</h3>
+        <p>Condé Nast Traveller India, 2021 – 2024</p>
+      </div>
+      <div class="award-box">
+        <span class="award-icon">🌟</span>
+        <h3>Michelin Guide Recommended</h3>
+        <p>Bib Gourmand 2023 & 2024</p>
+      </div>
+      <div class="award-box">
+        <span class="award-icon">🥇</span>
+        <h3>Best Chef — Arjun Mehra</h3>
+        <p>ITC Hotels Chef Awards, 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo/logo-white.png" alt="The Golden Fork"/>
+        <p>A Bengaluru institution of fine dining since 2008. We believe every table holds the potential for something magical.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">12, Church Street, MG Road</a></li>
+          <li><a href="#">Bengaluru, Karnataka 560001</a></li>
+          <li><a href="tel:+918012345678">+91 80 1234 5678</a></li>
+          <li><a href="mailto:info@goldenfork.in">info@goldenfork.in</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-hours">
+        <h4>Hours</h4>
+        <p>Mon – Thu: 12pm – 11pm</p>
+        <p>Fri – Sat: 12pm – 12am</p>
+        <p>Sunday: 1pm – 10pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Golden Fork. All rights reserved.</span>
+      <span>Designed with ♥ in Bengaluru</span>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+    });
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
